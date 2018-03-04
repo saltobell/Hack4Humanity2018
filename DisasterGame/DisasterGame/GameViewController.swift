@@ -31,7 +31,8 @@ class GameViewController: UIViewController {
                 sceneNode.scaleMode = .aspectFill
                 
                 // Present the scene
-                if let view = self.view as! SKView? {
+                if let view = self.view as! SKView?
+                {
                     view.presentScene(sceneNode)
                     
                     view.ignoresSiblingOrder = true
@@ -64,18 +65,11 @@ class GameViewController: UIViewController {
        
     }
     
-    @IBOutlet var Tap_Main_Screen: UITapGestureRecognizer!
+   @IBOutlet var Tap_Main_Screen: UITapGestureRecognizer!
     override var prefersStatusBarHidden: Bool {
         return true
     }
     
-    @IBAction func Title_Text(_ sender: Any) {
-        let gameName = UILabel()
-        gameName.text = "Disaster Strike!"
-        gameName.textAlignment = .center
-        gameName.textColor = UIColor.white
-        print(gameName)
-    }
     
     
 }

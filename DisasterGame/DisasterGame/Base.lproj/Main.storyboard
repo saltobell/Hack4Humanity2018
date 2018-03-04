@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kefa.ttf">
+            <string>Kefa-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -17,7 +22,27 @@
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Touch to Begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pT-dW-AI2">
+                                <rect key="frame" x="224" y="307" width="218" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="19"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Disaster Strike!" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BX-LU-Mfl">
+                                <rect key="frame" x="179" y="135" width="308" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="3" height="13"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69494818650000001" green="0.02784526059" blue="0.036570807390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <connections>
@@ -38,15 +63,111 @@
             </objects>
             <point key="canvasLocation" x="580.65967016491754" y="77.599999999999994"/>
         </scene>
+        <!--Title-->
+        <scene sceneID="Yxe-hQ-8PI">
+            <objects>
+                <viewController id="6o3-SM-XBa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zs6-KQ-rfE">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="B4Y-db-oI5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="8LH-3r-1MP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dld-4e-hPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2022" y="-1418"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="yMD-a3-3mX">
+            <objects>
+                <viewController id="9jr-25-vc2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WDd-hc-vaG">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Qao-LU-E2f"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="4Bz-zR-ycO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IGc-Yp-Abk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2022" y="-659"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="tBR-6t-cVB">
+            <objects>
+                <viewController id="CbA-yC-GyO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hzQ-bA-Dqq">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WjN-Rx-XlU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="hve-SV-Uq9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHz-Ye-wgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="96"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="t2p-td-Pgf">
+            <objects>
+                <viewController id="GRH-Pg-i8o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FA7-4W-MkL">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jfz-x4-Gqy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="sra-Pk-M7F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycu-DU-OTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2010" y="876"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="y7Z-0d-mKA">
+            <objects>
+                <viewController id="QGw-d7-UYU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kwG-iz-VrV">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kOF-Tv-Xae"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="zJi-jb-8DU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQq-eI-fWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2006" y="1701"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="ogY-JF-wmF">
+            <objects>
+                <viewController id="eOr-0h-PgO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yM6-HO-ybX">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ptf-FP-FkF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="VBP-7Z-mko"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUL-0g-vfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2006" y="2432"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="zcL-wB-iTP">
             <objects>
                 <viewController id="RSn-ZB-wVp" customClass="GameViewController" customModule="DisasterGame" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BfT-gf-fL1">
+                    <view key="view" contentMode="scaleToFill" id="BfT-gf-fL1" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="globe" translatesAutoresizingMaskIntoConstraints="NO" id="LOL-rJ-HOd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="globe" translatesAutoresizingMaskIntoConstraints="NO" id="LOL-rJ-HOd">
                                 <rect key="frame" x="177" y="31" width="313" height="313"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -54,8 +175,8 @@
                                     <outletCollection property="gestureRecognizers" destination="7DZ-R9-bEw" appends="YES" id="dku-uv-f4p"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chi-Ai-vdf">
-                                <rect key="frame" x="117" y="62" width="81" height="81"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chi-Ai-vdf">
+                                <rect key="frame" x="131" y="83" width="81" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="blizzard">
                                     <attributedString key="attributedTitle">
@@ -66,41 +187,62 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="6o3-SM-XBa" kind="show" id="wXs-vv-uKG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qn-dC-Rvo">
-                                <rect key="frame" x="113" y="214" width="85" height="86"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qn-dC-Rvo">
+                                <rect key="frame" x="131" y="194" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Wildfire" image="wildfire"/>
+                                <connections>
+                                    <segue destination="eOr-0h-PgO" kind="show" id="24a-v6-cD0"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g8-Bf-cT1">
-                                <rect key="frame" x="462" y="63" width="82" height="81"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g8-Bf-cT1">
+                                <rect key="frame" x="449" y="83" width="82" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Hurricane" image="hurricane-1"/>
+                                <connections>
+                                    <segue destination="CbA-yC-GyO" kind="show" id="ccM-wU-Ecu"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mU-bx-NOe">
-                                <rect key="frame" x="460" y="214" width="84" height="81"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mU-bx-NOe">
+                                <rect key="frame" x="449" y="209" width="95" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Tornado" image="tornado"/>
+                                <connections>
+                                    <segue destination="GRH-Pg-i8o" kind="show" id="oYd-Bo-A3X"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-sn-9OZ">
-                                <rect key="frame" x="289" y="276" width="81" height="79"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-sn-9OZ">
+                                <rect key="frame" x="277" y="267" width="104" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Flood" image="flood"/>
+                                <connections>
+                                    <segue destination="QGw-d7-UYU" kind="show" id="BZc-35-kdF"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QQ-04-kJ6">
-                                <rect key="frame" x="285" y="0.0" width="89" height="83"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QQ-04-kJ6">
+                                <rect key="frame" x="278" y="-15" width="110" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Earthquake" image="earthquake"/>
+                                <connections>
+                                    <segue destination="9jr-25-vc2" kind="show" id="EBG-Mi-wmw"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap a disaster to begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmi-mv-87P">
+                                <rect key="frame" x="449" y="334" width="198" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="2"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.6277566795486279" green="0.81639456045795344" blue="0.91009553108808294" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="EOZ-1m-VIr"/>
                     </view>
-                    <connections>
-                        <outlet property="blizzard_BGimg" destination="chi-Ai-vdf" id="G2d-wi-RQv"/>
-                        <outlet property="blizzard_button" destination="chi-Ai-vdf" id="wDN-FM-COZ"/>
-                        <outlet property="blizzard_img" destination="chi-Ai-vdf" id="krb-tB-XTw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6a-7R-OKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="7DZ-R9-bEw"/>
