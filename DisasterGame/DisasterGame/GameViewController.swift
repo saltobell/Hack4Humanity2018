@@ -12,6 +12,7 @@ import GameplayKit
 
 class GameViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,8 +59,23 @@ class GameViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
     }
-
+    @IBAction func Title(_ sender: Any) {
+        
+       
+    }
+    
+    @IBOutlet var Tap_Main_Screen: UITapGestureRecognizer!
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    @IBAction func Title_Text(_ sender: Any) {
+        let gameName = UILabel()
+        gameName.text = "Disaster Strike!"
+        gameName.textAlignment = .center
+        gameName.textColor = UIColor.white
+        print(gameName)
+    }
+    
+    
 }
